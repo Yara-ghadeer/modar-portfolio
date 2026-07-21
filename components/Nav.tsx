@@ -22,7 +22,7 @@ export default function Nav() {
           href="/"
           className="font-display text-xl font-semibold tracking-tight text-espresso"
         >
-          Modar<span className="text-copper">.</span>
+          MG<span className="text-copper">.</span>
         </Link>
 
         {/* Desktop links */}

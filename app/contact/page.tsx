@@ -1,9 +1,17 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact — Modar",
-  description: "Get in touch with Modar for F&B consulting engagements.",
+  title: "Contact — Modar Ghadeer",
+  description:
+    "Get in touch with Modar Ghadeer for F&B consulting engagements — WhatsApp, email, LinkedIn, or Instagram.",
 };
+
+const channels = [
+  { label: "WhatsApp", value: "+00 000 000 0000" /* TODO: real number */ },
+  { label: "Email", value: "hello@modarghadeer.com" /* TODO: real email */ },
+  { label: "LinkedIn", value: "linkedin.com/in/…" /* TODO: real link */ },
+  { label: "Instagram", value: "@…" /* TODO: real handle */ },
+];
 
 export default function Contact() {
   return (
@@ -24,30 +32,16 @@ export default function Contact() {
           </p>
 
           <dl className="space-y-6">
-            <div>
-              <dt className="text-xs font-semibold uppercase tracking-[0.15em] text-ink/60">
-                Email
-              </dt>
-              <dd className="mt-1 font-display text-xl text-espresso">
-                hello@modar.example {/* TODO: real email */}
-              </dd>
-            </div>
-            <div>
-              <dt className="text-xs font-semibold uppercase tracking-[0.15em] text-ink/60">
-                Phone / WhatsApp
-              </dt>
-              <dd className="mt-1 font-display text-xl text-espresso">
-                +000 00 000 0000 {/* TODO: real phone */}
-              </dd>
-            </div>
-            <div>
-              <dt className="text-xs font-semibold uppercase tracking-[0.15em] text-ink/60">
-                Based in
-              </dt>
-              <dd className="mt-1 font-display text-xl text-espresso">
-                City, Country {/* TODO: real location */}
-              </dd>
-            </div>
+            {channels.map(({ label, value }) => (
+              <div key={label}>
+                <dt className="text-xs font-semibold uppercase tracking-[0.15em] text-ink/60">
+                  {label}
+                </dt>
+                <dd className="mt-1 font-display text-xl text-espresso">
+                  {value}
+                </dd>
+              </div>
+            ))}
           </dl>
         </div>
 
@@ -106,8 +100,8 @@ export default function Contact() {
               Send message
             </button>
             <p className="text-xs text-ink/60">
-              The form isn&apos;t wired to a backend yet — email works best for
-              now.
+              The form isn&apos;t wired to a backend yet — WhatsApp or email
+              works best for now.
             </p>
           </div>
         </form>

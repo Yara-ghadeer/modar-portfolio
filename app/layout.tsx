@@ -17,9 +17,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Modar — F&B Business Development Consultant",
+  title: "Modar Ghadeer — F&B Business Development Consultant",
   description:
-    "Helping restaurants, cafés, and hospitality brands grow — concept development, market entry, menu engineering, and operational excellence.",
+    "Transforming ideas into successful food businesses — strategic planning, concept development, operational improvement, and business growth.",
 };
 
 export default function RootLayout({

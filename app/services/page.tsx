@@ -2,61 +2,75 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Services — Modar",
+  title: "Services — Modar Ghadeer",
   description:
-    "F&B consulting services: concept development, market entry, menu engineering, and operational excellence.",
+    "F&B consulting services: business consultation, concept & business planning, restaurant development, business performance, and brand development.",
 };
 
 const services = [
   {
     number: "01",
-    title: "Concept Development",
+    title: "Business Consultation",
     description:
-      "Turning an idea into a concept that works on paper before it costs money in the real world.",
+      "Professional consultation to evaluate ideas, solve business challenges, and support better decision-making.",
     points: [
-      "Positioning & brand story",
-      "Menu direction & pricing strategy",
-      "Financial feasibility & investment model",
-      "Design brief & guest experience mapping",
+      "Business Assessment",
+      "Strategic Advice",
+      "Opportunity Analysis",
+      "Action Plan",
     ],
   },
   {
     number: "02",
-    title: "Market Entry & Expansion",
+    title: "Concept & Business Planning",
     description:
-      "Structured growth into new locations and markets — with the research to back every decision.",
+      "Developing restaurant concepts and business plans that create a strong foundation for successful projects.",
     points: [
-      "Market & competitor studies",
-      "Location strategy & site evaluation",
-      "Franchise model development",
-      "Partner & investor readiness",
+      "Concept Development",
+      "Feasibility Study",
+      "Business Planning",
+      "Market Positioning",
     ],
   },
   {
     number: "03",
-    title: "Menu Engineering",
+    title: "Restaurant Development",
     description:
-      "A menu is a P&L in disguise. I redesign menus around cost, contribution, and guest behavior.",
+      "Supporting restaurant projects from planning to opening.",
     points: [
-      "Food cost & contribution analysis",
-      "Menu mix & pricing optimization",
-      "Kitchen workflow alignment",
-      "Supplier & procurement review",
+      "Project Development",
+      "Equipment Selection",
+      "Supplier Coordination",
+      "Opening Support",
     ],
   },
   {
     number: "04",
-    title: "Operational Excellence",
+    title: "Business Performance",
     description:
-      "The systems that keep quality consistent when the founder isn't in the room.",
+      "Improving operational efficiency, profitability, and customer experience.",
     points: [
-      "SOPs & service standards",
-      "Org structure & training programs",
-      "P&L reviews & cost control",
-      "Pre-opening & turnaround support",
+      "Operational Review",
+      "Menu Engineering",
+      "Cost Optimisation",
+      "Performance Improvement",
+    ],
+  },
+  {
+    number: "05",
+    title: "Brand Development",
+    description:
+      "Building a professional restaurant brand and customer experience.",
+    points: [
+      "Brand Identity",
+      "Menu Design",
+      "Food Photography",
+      "Marketing Materials",
     ],
   },
 ];
+
+const process = ["Discovery", "Analysis", "Planning", "Development", "Growth"];
 
 export default function Services() {
   return (
@@ -66,7 +80,7 @@ export default function Services() {
           Services
         </p>
         <h1 className="mt-6 max-w-3xl font-display text-5xl font-semibold leading-[1.1] tracking-tight text-espresso md:text-6xl">
-          Four ways I help F&amp;B businesses grow.
+          Five ways I help food businesses grow.
         </h1>
         <p className="mt-8 max-w-xl text-lg leading-relaxed text-ink">
           Every engagement starts with the numbers and ends with something you
@@ -99,6 +113,30 @@ export default function Services() {
             </ul>
           </article>
         ))}
+      </section>
+
+      {/* Process */}
+      <section className="border-t border-espresso/8 bg-cream-deep">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <h2 className="font-display text-3xl font-semibold tracking-tight text-espresso">
+            My process
+          </h2>
+          <ol className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+            {process.map((step, i) => (
+              <li
+                key={step}
+                className="rounded-2xl border border-espresso/8 bg-paper p-6"
+              >
+                <p className="font-display text-2xl font-semibold text-copper/50">
+                  {String(i + 1).padStart(2, "0")}
+                </p>
+                <p className="mt-3 font-display text-lg font-semibold text-espresso">
+                  {step}
+                </p>
+              </li>
+            ))}
+          </ol>
+        </div>
       </section>
 
       <section className="bg-espresso">

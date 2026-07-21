@@ -6,11 +6,11 @@ export default function Footer() {
       <div className="mx-auto grid max-w-6xl gap-12 px-6 py-16 md:grid-cols-3">
         <div>
           <p className="font-display text-2xl font-semibold">
-            Modar<span className="text-copper">.</span>
+            Modar Ghadeer<span className="text-copper">.</span>
           </p>
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-cream/60">
-            F&amp;B business development consultant — building concepts that
-            last and operations that scale.
+            F&amp;B business development consultant — transforming ideas into
+            successful food businesses.
           </p>
         </div>
 
@@ -42,16 +42,17 @@ export default function Footer() {
             Get in touch
           </p>
           <ul className="mt-4 space-y-2.5 text-sm text-cream/75">
-            <li>hello@modar.example {/* TODO: real email */}</li>
-            <li>+000 00 000 0000 {/* TODO: real phone */}</li>
+            <li>WhatsApp {/* TODO: real number */}</li>
+            <li>Email {/* TODO: real address */}</li>
             <li>LinkedIn {/* TODO: real link */}</li>
+            <li>Instagram {/* TODO: real handle */}</li>
           </ul>
         </div>
       </div>
 
       <div className="border-t border-cream/10">
         <p className="mx-auto max-w-6xl px-6 py-6 text-xs text-cream/40">
-          © {new Date().getFullYear()} Modar. All rights reserved.
+          © {new Date().getFullYear()} Modar Ghadeer. All rights reserved.
         </p>
       </div>
     </footer>
