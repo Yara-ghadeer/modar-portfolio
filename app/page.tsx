@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const services = [
@@ -58,7 +59,7 @@ export default function Home() {
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <Link
               href="/contact"
-              className="rounded-full bg-copper px-7 py-3.5 text-sm font-semibold text-cream transition-colors hover:bg-copper-deep"
+              className="rounded-full bg-aqua px-7 py-3.5 text-sm font-semibold text-espresso transition-colors hover:bg-aqua-dim"
             >
               Book a consultation
             </Link>
@@ -71,9 +72,15 @@ export default function Home() {
           </div>
         </div>
 
-        {/* TODO: replace with a real portrait of Modar */}
-        <div className="flex aspect-[4/5] w-full items-center justify-center rounded-3xl bg-copper/10">
-          <p className="text-sm text-ink/50">Portrait photo — coming soon</p>
+        <div className="aspect-[4/5] w-full overflow-hidden rounded-3xl bg-cream-deep">
+          <Image
+            src="/portrait.jpg"
+            alt="Portrait of Modar Ghadeer"
+            width={860}
+            height={1120}
+            priority
+            className="h-full w-full object-cover object-top grayscale"
+          />
         </div>
       </section>
 
@@ -176,7 +183,7 @@ export default function Home() {
           </p>
           <Link
             href="/contact"
-            className="mt-9 inline-block rounded-full bg-copper px-8 py-4 text-sm font-semibold text-cream transition-colors hover:bg-copper-deep"
+            className="mt-9 inline-block rounded-full bg-aqua px-8 py-4 text-sm font-semibold text-espresso transition-colors hover:bg-aqua-dim"
           >
             Book a consultation
           </Link>
