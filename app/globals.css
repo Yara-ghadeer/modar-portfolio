@@ -7,11 +7,11 @@
   --color-espresso: #121212;
   --color-espresso-soft: #2b2b2b;
   --color-ink: #4d4d4d;
-  --color-copper: #0d9488;
-  --color-copper-deep: #0f766e;
-  --color-mint: #5eead4;
-  --color-teal-light: #2dd4bf;
-  --color-green-light: #34d399;
+  --color-copper: #3a6573;
+  --color-copper-deep: #2d505c;
+  --color-mint: #9ec4cf;
+  --color-teal-light: #7ba7b6;
+  --color-green-light: #86af9f;
 
   --font-display: var(--font-space);
   --font-sans: var(--font-manrope);
@@ -34,5 +34,5 @@ body {
 }
 
 ::selection {
-  background: rgba(45, 212, 191, 0.2);
+  background: rgba(123, 167, 182, 0.25);
 }
