@@ -29,8 +29,6 @@ const services = [
   },
 ];
 
-const process = ["Discovery", "Analysis", "Planning", "Development", "Growth"];
-
 const featuredWork = [
   "Premium Shawarma Concept",
   "Modern Café Concept",
@@ -114,31 +112,6 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
-
-      {/* Process */}
-      <section className="mx-auto max-w-6xl px-6 py-24">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
-          My process
-        </p>
-        <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight text-espresso">
-          Five steps, one clear path
-        </h2>
-        <ol className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-          {process.map((step, i) => (
-            <li
-              key={step}
-              className="rounded-2xl border border-espresso/8 bg-paper p-6"
-            >
-              <p className="font-display text-2xl font-semibold text-copper/50">
-                {String(i + 1).padStart(2, "0")}
-              </p>
-              <p className="mt-3 font-display text-lg font-semibold text-espresso">
-                {step}
-              </p>
-            </li>
-          ))}
-        </ol>
       </section>
 
       {/* Featured work */}
