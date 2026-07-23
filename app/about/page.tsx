@@ -86,7 +86,7 @@ export default function About() {
         </h2>
         <Link
           href="/contact"
-          className="mt-7 inline-block rounded-full bg-espresso px-7 py-3.5 text-sm font-semibold text-cream transition-colors hover:bg-copper"
+          className="mt-7 inline-block rounded-full bg-copper px-7 py-3.5 text-sm font-semibold text-cream transition-colors hover:bg-copper-deep"
         >
           Get in touch
         </Link>

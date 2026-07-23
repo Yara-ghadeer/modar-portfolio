@@ -46,7 +46,7 @@ export default function Home() {
         </p>
         <h1 className="mt-6 max-w-3xl font-display text-5xl font-semibold leading-[1.1] tracking-tight text-espresso md:text-7xl">
           Transforming ideas into{" "}
-          <em className="italic text-copper">successful</em> food businesses.
+          <em className="not-italic text-copper">successful</em> food businesses.
         </h1>
         <p className="mt-8 max-w-xl text-lg leading-relaxed text-ink">
           I help entrepreneurs and investors build profitable and sustainable
@@ -56,13 +56,13 @@ export default function Home() {
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <Link
             href="/contact"
-            className="rounded-full bg-espresso px-7 py-3.5 text-sm font-semibold text-cream transition-colors hover:bg-copper"
+            className="rounded-full bg-copper px-7 py-3.5 text-sm font-semibold text-cream transition-colors hover:bg-copper-deep"
           >
             Book a consultation
           </Link>
           <Link
             href="/services"
-            className="rounded-full border border-espresso/20 px-7 py-3.5 text-sm font-semibold text-espresso transition-colors hover:border-copper hover:text-copper"
+            className="rounded-full border border-copper px-7 py-3.5 text-sm font-semibold text-copper transition-colors hover:bg-copper/10"
           >
             Explore services
           </Link>
@@ -168,7 +168,7 @@ export default function Home() {
           </p>
           <Link
             href="/contact"
-            className="mt-9 inline-block rounded-full bg-cream px-8 py-4 text-sm font-semibold text-espresso transition-colors hover:bg-cream/80"
+            className="mt-9 inline-block rounded-full bg-copper px-8 py-4 text-sm font-semibold text-cream transition-colors hover:bg-copper-deep"
           >
             Book a consultation
           </Link>

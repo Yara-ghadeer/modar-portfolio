@@ -47,7 +47,7 @@ export default function Nav() {
           <li>
             <Link
               href="/contact"
-              className="rounded-full bg-espresso px-5 py-2.5 text-sm font-semibold text-cream transition-colors hover:bg-copper"
+              className="rounded-full bg-copper px-5 py-2.5 text-sm font-semibold text-cream transition-colors hover:bg-copper-deep"
             >
               Book a consultation
             </Link>

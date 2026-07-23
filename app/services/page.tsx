@@ -150,7 +150,7 @@ export default function Services() {
           </p>
           <Link
             href="/contact"
-            className="mt-9 inline-block rounded-full bg-cream px-8 py-4 text-sm font-semibold text-espresso transition-colors hover:bg-cream/80"
+            className="mt-9 inline-block rounded-full bg-copper px-8 py-4 text-sm font-semibold text-cream transition-colors hover:bg-copper-deep"
           >
             Book a consultation
           </Link>
