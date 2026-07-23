@@ -85,32 +85,50 @@ export default function Home() {
       {/* Services preview */}
       <section className="border-t border-espresso/8 bg-cream-deep">
         <div className="mx-auto max-w-6xl px-6 py-24">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
-            What I do
-          </p>
-          <h2 className="mt-4 max-w-2xl font-display text-4xl font-semibold tracking-tight text-espresso">
-            From first idea to full-scale operation
-          </h2>
-
-          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {services.map(({ title, description }) => (
-              <div
-                key={title}
-                className="rounded-2xl border border-espresso/8 bg-paper p-8 transition-shadow hover:shadow-lg hover:shadow-espresso/5"
-              >
-                <h3 className="font-display text-xl font-semibold text-espresso">
-                  {title}
-                </h3>
-                <p className="mt-3 leading-relaxed text-ink">{description}</p>
-              </div>
-            ))}
+          <div className="flex flex-wrap items-end justify-between gap-6">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
+                What I do
+              </p>
+              <h2 className="mt-4 max-w-2xl font-display text-4xl font-semibold tracking-tight text-espresso">
+                From first idea to full-scale operation
+              </h2>
+            </div>
             <Link
               href="/services"
-              className="flex items-center justify-center rounded-2xl border border-dashed border-copper/40 p-8 text-center font-display text-xl font-semibold text-copper transition-colors hover:border-copper hover:bg-copper/5"
+              className="text-sm font-semibold text-copper transition-colors hover:text-copper-deep"
             >
-              See the full scope →
+              All services →
             </Link>
           </div>
+
+          <ul className="mt-14 border-y border-espresso/10">
+            {services.map(({ title, description }, i) => (
+              <li
+                key={title}
+                className="border-b border-espresso/10 last:border-b-0"
+              >
+                <Link
+                  href="/services"
+                  className="group grid items-center gap-x-8 gap-y-2 py-8 transition-colors hover:bg-copper/4 md:grid-cols-[72px_1.1fr_1.4fr_48px]"
+                >
+                  <span className="font-display text-lg font-medium text-copper/50">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="font-display text-2xl font-semibold tracking-tight text-espresso transition-colors group-hover:text-copper">
+                    {title}
+                  </h3>
+                  <p className="leading-relaxed text-ink">{description}</p>
+                  <span
+                    aria-hidden="true"
+                    className="hidden -translate-x-2 justify-self-end text-2xl text-copper opacity-0 transition-all duration-200 group-hover:translate-x-0 group-hover:opacity-100 md:block"
+                  >
+                    →
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
