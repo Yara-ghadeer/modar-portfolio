@@ -102,33 +102,76 @@ export default function Home() {
             </Link>
           </div>
 
-          <ul className="mt-14 border-y border-espresso/10">
-            {services.map(({ title, description }, i) => (
-              <li
-                key={title}
-                className="border-b border-espresso/10 last:border-b-0"
-              >
-                <Link
-                  href="/services"
-                  className="group grid items-center gap-x-8 gap-y-2 py-8 transition-colors hover:bg-copper/4 md:grid-cols-[72px_1.1fr_1.4fr_48px]"
+          <div className="mt-12 grid gap-6 lg:grid-cols-[1.1fr_1fr]">
+            {/* Featured service */}
+            <Link
+              href="/services"
+              className="group flex flex-col justify-between rounded-2xl bg-copper p-10 transition-colors hover:bg-copper-deep"
+            >
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-cream/60">
+                  Where most clients start
+                </p>
+                <h3 className="mt-5 font-display text-3xl font-semibold tracking-tight text-cream">
+                  {services[0].title}
+                </h3>
+                <p className="mt-4 max-w-md leading-relaxed text-cream/80">
+                  {services[0].description}
+                </p>
+                <ul className="mt-8 space-y-2.5">
+                  {[
+                    "Business Assessment",
+                    "Strategic Advice",
+                    "Opportunity Analysis",
+                    "Action Plan",
+                  ].map((point) => (
+                    <li
+                      key={point}
+                      className="flex gap-3 text-sm text-cream/90"
+                    >
+                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-mint" />
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <p className="mt-10 text-sm font-semibold text-cream">
+                Start here{" "}
+                <span
+                  aria-hidden="true"
+                  className="inline-block transition-transform group-hover:translate-x-1"
                 >
-                  <span className="font-display text-lg font-medium text-copper/50">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <h3 className="font-display text-2xl font-semibold tracking-tight text-espresso transition-colors group-hover:text-copper">
-                    {title}
-                  </h3>
-                  <p className="leading-relaxed text-ink">{description}</p>
+                  →
+                </span>
+              </p>
+            </Link>
+
+            {/* Supporting services */}
+            <div className="grid gap-6">
+              {services.slice(1).map(({ title, description }) => (
+                <Link
+                  key={title}
+                  href="/services"
+                  className="group flex items-center justify-between gap-6 rounded-2xl border border-espresso/8 bg-paper p-6 transition-colors hover:border-copper/40"
+                >
+                  <div>
+                    <h3 className="font-display text-lg font-semibold tracking-tight text-espresso transition-colors group-hover:text-copper">
+                      {title}
+                    </h3>
+                    <p className="mt-1.5 text-sm leading-relaxed text-ink">
+                      {description}
+                    </p>
+                  </div>
                   <span
                     aria-hidden="true"
-                    className="hidden -translate-x-2 justify-self-end text-2xl text-copper opacity-0 transition-all duration-200 group-hover:translate-x-0 group-hover:opacity-100 md:block"
+                    className="-translate-x-1 text-xl text-copper opacity-0 transition-all duration-200 group-hover:translate-x-0 group-hover:opacity-100"
                   >
                     →
                   </span>
                 </Link>
-              </li>
-            ))}
-          </ul>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
