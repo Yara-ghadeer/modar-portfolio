@@ -47,9 +47,7 @@ export default function Home() {
           </p>
           <h1 className="mt-6 font-display text-5xl font-semibold leading-[1.1] tracking-tight text-espresso md:text-6xl lg:text-7xl">
             Transforming ideas into{" "}
-            <em className="bg-linear-to-r from-copper to-green-light bg-clip-text not-italic text-transparent">
-              successful
-            </em>{" "}
+            <em className="not-italic text-copper">successful</em>{" "}
             food businesses.
           </h1>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-ink">
@@ -60,7 +58,7 @@ export default function Home() {
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <Link
               href="/contact"
-              className="rounded-full bg-linear-to-r from-teal-light to-green-light px-7 py-3.5 text-sm font-semibold text-espresso transition hover:brightness-95"
+              className="rounded-full bg-copper px-7 py-3.5 text-sm font-semibold text-cream transition-colors hover:bg-copper-deep"
             >
               Book a consultation
             </Link>
@@ -74,8 +72,7 @@ export default function Home() {
         </div>
 
         {/* TODO: replace with a real portrait of Modar */}
-        <div className="relative flex aspect-[4/5] w-full items-center justify-center overflow-hidden rounded-3xl bg-cream-deep">
-          <div className="absolute inset-0 bg-linear-to-tr from-teal-light/15 via-transparent to-green-light/15" />
+        <div className="flex aspect-[4/5] w-full items-center justify-center rounded-3xl bg-copper/10">
           <p className="text-sm text-ink/50">Portrait photo — coming soon</p>
         </div>
       </section>
@@ -179,7 +176,7 @@ export default function Home() {
           </p>
           <Link
             href="/contact"
-            className="mt-9 inline-block rounded-full bg-linear-to-r from-teal-light to-green-light px-8 py-4 text-sm font-semibold text-espresso transition hover:brightness-95"
+            className="mt-9 inline-block rounded-full bg-copper px-8 py-4 text-sm font-semibold text-cream transition-colors hover:bg-copper-deep"
           >
             Book a consultation
           </Link>
