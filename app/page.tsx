@@ -30,9 +30,21 @@ const services = [
 ];
 
 const featuredWork = [
-  "Premium Shawarma Concept",
-  "Modern Café Concept",
-  "Cloud Kitchen Concept",
+  {
+    title: "Premium Shawarma Concept",
+    line: "A street classic reimagined as a premium fast-casual brand.",
+    tags: ["Concept", "Branding", "Menu"],
+  },
+  {
+    title: "Modern Café Concept",
+    line: "A contemporary café experience built around quality coffee.",
+    tags: ["Concept", "Feasibility", "Design"],
+  },
+  {
+    title: "Cloud Kitchen Concept",
+    line: "A delivery-first kitchen designed for efficient operations.",
+    tags: ["Concept", "Operations", "Launch"],
+  },
 ];
 
 export default function Home() {
@@ -176,7 +188,7 @@ export default function Home() {
       </section>
 
       {/* Featured work */}
-      <section className="border-t border-espresso/8 bg-cream-deep">
+      <section className="border-t border-espresso/8 bg-paper">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
             Featured work
@@ -184,21 +196,31 @@ export default function Home() {
           <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight text-espresso">
             Concepts brought to life
           </h2>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {featuredWork.map((title) => (
-              <article
-                key={title}
-                className="overflow-hidden rounded-2xl border border-espresso/8 bg-paper"
-              >
+          <p className="mt-4 max-w-xl leading-relaxed text-ink">
+            A selection of concepts I&apos;ve helped shape — from first
+            sketch to opening day.
+          </p>
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
+            {featuredWork.map(({ title, line, tags }) => (
+              <article key={title} className="group">
                 {/* TODO: replace with real cover image */}
-                <div className="flex aspect-[4/3] items-center justify-center bg-cream-deep text-sm text-ink/50">
+                <div className="flex aspect-[4/3] items-center justify-center overflow-hidden rounded-2xl bg-cream-deep text-sm text-ink/50 transition-transform duration-300 group-hover:scale-[1.02]">
                   Cover image — coming soon
                 </div>
-                <div className="p-6">
-                  <h3 className="font-display text-xl font-semibold text-espresso">
-                    {title}
-                  </h3>
-                </div>
+                <h3 className="mt-5 font-display text-xl font-semibold tracking-tight text-espresso">
+                  {title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-ink">{line}</p>
+                <ul className="mt-4 flex flex-wrap gap-2">
+                  {tags.map((tag) => (
+                    <li
+                      key={tag}
+                      className="rounded-full border border-copper/25 px-3 py-1 text-xs font-medium text-copper"
+                    >
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
               </article>
             ))}
           </div>
