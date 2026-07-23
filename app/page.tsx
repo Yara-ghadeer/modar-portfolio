@@ -34,16 +34,19 @@ const featuredWork = [
     title: "Premium Shawarma Concept",
     line: "A street classic reimagined as a premium fast-casual brand.",
     tags: ["Concept", "Branding", "Menu"],
+    image: "/work/shawarma.svg",
   },
   {
     title: "Modern Café Concept",
     line: "A contemporary café experience built around quality coffee.",
     tags: ["Concept", "Feasibility", "Design"],
+    image: "/work/cafe.svg",
   },
   {
     title: "Cloud Kitchen Concept",
     line: "A delivery-first kitchen designed for efficient operations.",
     tags: ["Concept", "Operations", "Launch"],
+    image: "/work/cloud-kitchen.svg",
   },
 ];
 
@@ -201,11 +204,17 @@ export default function Home() {
             sketch to opening day.
           </p>
           <div className="mt-12 grid gap-8 md:grid-cols-3">
-            {featuredWork.map(({ title, line, tags }) => (
+            {featuredWork.map(({ title, line, tags, image }) => (
               <article key={title} className="group">
-                {/* TODO: replace with real cover image */}
-                <div className="flex aspect-[4/3] items-center justify-center overflow-hidden rounded-2xl bg-cream-deep text-sm text-ink/50 transition-transform duration-300 group-hover:scale-[1.02]">
-                  Cover image — coming soon
+                <div className="overflow-hidden rounded-2xl">
+                  <Image
+                    src={image}
+                    alt={`${title} cover illustration`}
+                    width={800}
+                    height={600}
+                    unoptimized
+                    className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                  />
                 </div>
                 <h3 className="mt-5 font-display text-xl font-semibold tracking-tight text-espresso">
                   {title}

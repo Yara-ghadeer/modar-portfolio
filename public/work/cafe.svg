@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#eef0ef"/>
+  <text x="770" y="580" text-anchor="end" font-family="Arial, sans-serif" font-size="220" font-weight="700" fill="#121212" opacity="0.05">02</text>
+  <g stroke="#1f1f1f" stroke-width="7" stroke-linecap="round" fill="none">
+    <!-- cup -->
+    <path d="M320 280 H480 V360 A60 60 0 0 1 420 420 H380 A60 60 0 0 1 320 360 Z"/>
+    <!-- handle -->
+    <path d="M480 300 H506 A38 38 0 0 1 506 376 H478"/>
+    <!-- saucer -->
+    <path d="M290 460 H510"/>
+    <path d="M330 492 A100 34 0 0 0 470 492"/>
+  </g>
+  <g stroke="#0e7a56" stroke-width="7" stroke-linecap="round" fill="none">
+    <!-- steam -->
+    <path d="M368 236 C356 214 380 200 368 178 C360 164 368 152 376 144"/>
+    <path d="M432 236 C420 214 444 200 432 178 C424 164 432 152 440 144"/>
+  </g>
+</svg>
