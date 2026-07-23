@@ -34,19 +34,19 @@ const featuredWork = [
     title: "Premium Shawarma Concept",
     line: "A street classic reimagined as a premium fast-casual brand.",
     tags: ["Concept", "Branding", "Menu"],
-    image: "/work/shawarma.svg",
+    image: "/work/shawarma.jpg",
   },
   {
     title: "Modern Café Concept",
     line: "A contemporary café experience built around quality coffee.",
     tags: ["Concept", "Feasibility", "Design"],
-    image: "/work/cafe.svg",
+    image: "/work/cafe.jpg",
   },
   {
     title: "Cloud Kitchen Concept",
     line: "A delivery-first kitchen designed for efficient operations.",
     tags: ["Concept", "Operations", "Launch"],
-    image: "/work/cloud-kitchen.svg",
+    image: "/work/cloud-kitchen.jpg",
   },
 ];
 
@@ -209,11 +209,10 @@ export default function Home() {
                 <div className="overflow-hidden rounded-2xl">
                   <Image
                     src={image}
-                    alt={`${title} cover illustration`}
-                    width={800}
-                    height={600}
-                    unoptimized
-                    className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                    alt={`${title} cover photo`}
+                    width={1200}
+                    height={900}
+                    className="aspect-[4/3] w-full object-cover grayscale transition-all duration-300 group-hover:scale-[1.03] group-hover:grayscale-0"
                   />
                 </div>
                 <h3 className="mt-5 font-display text-xl font-semibold tracking-tight text-espresso">
