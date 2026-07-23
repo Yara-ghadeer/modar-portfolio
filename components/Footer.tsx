@@ -41,11 +41,35 @@ export default function Footer() {
           <p className="text-xs font-semibold uppercase tracking-[0.15em] text-cream/40">
             Get in touch
           </p>
-          <ul className="mt-4 space-y-2.5 text-sm text-cream/75">
-            <li>WhatsApp {/* TODO: real number */}</li>
-            <li>Email {/* TODO: real address */}</li>
-            <li>LinkedIn {/* TODO: real link */}</li>
-            <li>Instagram {/* TODO: real handle */}</li>
+          <ul className="mt-4 space-y-2.5 text-sm">
+            <li>
+              <a
+                href="https://wa.me/601128688640"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cream/75 transition-colors hover:text-cream"
+              >
+                WhatsApp — +60 11 2868 8640
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:modarghadeer33@gmail.com"
+                className="text-cream/75 transition-colors hover:text-cream"
+              >
+                modarghadeer33@gmail.com
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/modar-ghadeer/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cream/75 transition-colors hover:text-cream"
+              >
+                LinkedIn
+              </a>
+            </li>
           </ul>
         </div>
       </div>

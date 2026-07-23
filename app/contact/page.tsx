@@ -3,14 +3,25 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact — Modar Ghadeer",
   description:
-    "Get in touch with Modar Ghadeer for F&B consulting engagements — WhatsApp, email, LinkedIn, or Instagram.",
+    "Get in touch with Modar Ghadeer for F&B consulting engagements — WhatsApp, email, or LinkedIn.",
 };
 
 const channels = [
-  { label: "WhatsApp", value: "+00 000 000 0000" /* TODO: real number */ },
-  { label: "Email", value: "hello@modarghadeer.com" /* TODO: real email */ },
-  { label: "LinkedIn", value: "linkedin.com/in/…" /* TODO: real link */ },
-  { label: "Instagram", value: "@…" /* TODO: real handle */ },
+  {
+    label: "WhatsApp",
+    value: "+60 11 2868 8640",
+    href: "https://wa.me/601128688640",
+  },
+  {
+    label: "Email",
+    value: "modarghadeer33@gmail.com",
+    href: "mailto:modarghadeer33@gmail.com",
+  },
+  {
+    label: "LinkedIn",
+    value: "linkedin.com/in/modar-ghadeer",
+    href: "https://www.linkedin.com/in/modar-ghadeer/",
+  },
 ];
 
 export default function Contact() {
@@ -32,24 +43,39 @@ export default function Contact() {
           </p>
 
           <dl className="space-y-6">
-            {channels.map(({ label, value }) => (
+            {channels.map(({ label, value, href }) => (
               <div key={label}>
                 <dt className="text-xs font-semibold uppercase tracking-[0.15em] text-ink/60">
                   {label}
                 </dt>
-                <dd className="mt-1 font-display text-xl text-espresso">
-                  {value}
+                <dd className="mt-1">
+                  <a
+                    href={href}
+                    target={href.startsWith("mailto") ? undefined : "_blank"}
+                    rel="noopener noreferrer"
+                    className="font-display text-xl text-espresso transition-colors hover:text-copper"
+                  >
+                    {value}
+                  </a>
                 </dd>
               </div>
             ))}
           </dl>
         </div>
 
-        {/* Contact form (front-end only for now) */}
+        {/* Contact form — submissions are emailed to Modar via FormSubmit */}
         <form
           className="rounded-2xl border border-espresso/8 bg-paper p-8"
-          action="#"
+          action="https://formsubmit.co/modarghadeer33@gmail.com"
+          method="POST"
         >
+          <input
+            type="hidden"
+            name="_subject"
+            value="New inquiry from your portfolio website"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
           <div className="space-y-5">
             <div>
               <label
@@ -62,6 +88,7 @@ export default function Contact() {
                 id="name"
                 name="name"
                 type="text"
+                required
                 className="mt-1.5 h-12 w-full rounded-lg border border-espresso/15 bg-cream px-4 text-espresso outline-none transition-colors focus:border-copper"
               />
             </div>
@@ -76,6 +103,7 @@ export default function Contact() {
                 id="email"
                 name="email"
                 type="email"
+                required
                 className="mt-1.5 h-12 w-full rounded-lg border border-espresso/15 bg-cream px-4 text-espresso outline-none transition-colors focus:border-copper"
               />
             </div>
@@ -90,6 +118,7 @@ export default function Contact() {
                 id="message"
                 name="message"
                 rows={5}
+                required
                 className="mt-1.5 w-full rounded-lg border border-espresso/15 bg-cream px-4 py-3 text-espresso outline-none transition-colors focus:border-copper"
               />
             </div>
@@ -100,8 +129,8 @@ export default function Contact() {
               Send message
             </button>
             <p className="text-xs text-ink/60">
-              The form isn&apos;t wired to a backend yet — WhatsApp or email
-              works best for now.
+              Your message goes straight to Modar&apos;s inbox. Prefer chat?
+              WhatsApp is the fastest way to reach him.
             </p>
           </div>
         </form>
