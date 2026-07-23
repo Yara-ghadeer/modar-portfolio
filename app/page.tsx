@@ -34,13 +34,13 @@ const featuredWork = [
     title: "Premium Shawarma Concept",
     line: "A street classic reimagined as a premium fast-casual brand.",
     tags: ["Concept", "Branding", "Menu"],
-    image: "/work/shawarma.jpg",
+    image: "/work/shawarma-grill.jpg",
   },
   {
     title: "Modern Café Concept",
     line: "A contemporary café experience built around quality coffee.",
     tags: ["Concept", "Feasibility", "Design"],
-    image: "/work/cafe.jpg",
+    image: "/work/cafe-dark.jpg",
   },
   {
     title: "Cloud Kitchen Concept",
@@ -212,7 +212,7 @@ export default function Home() {
                     alt={`${title} cover photo`}
                     width={1200}
                     height={900}
-                    className="aspect-[4/3] w-full object-cover grayscale transition-all duration-300 group-hover:scale-[1.03] group-hover:grayscale-0"
+                    className="aspect-[4/3] w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
                   />
                 </div>
                 <h3 className="mt-5 font-display text-xl font-semibold tracking-tight text-espresso">
@@ -232,6 +232,30 @@ export default function Home() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Brochure */}
+      <section className="border-t border-espresso/8 bg-copper/8">
+        <div className="mx-auto max-w-6xl px-6 py-24 text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
+            Brochure
+          </p>
+          <h2 className="mx-auto mt-4 max-w-2xl font-display text-4xl font-semibold tracking-tight text-espresso">
+            F&amp;B consultancy — an overview
+          </h2>
+          <p className="mx-auto mt-5 max-w-xl leading-relaxed text-ink">
+            Everything on one page — services, process, and how to get in
+            touch. Download the overview and share it with your partners or
+            investors.
+          </p>
+          <a
+            href="/brochure.pdf"
+            download="Modar-Ghadeer-FB-Consultancy.pdf"
+            className="mt-9 inline-block rounded-full bg-copper px-8 py-4 text-sm font-semibold text-cream transition-colors hover:bg-copper-deep"
+          >
+            Download the brochure (PDF)
+          </a>
         </div>
       </section>
 
