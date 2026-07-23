@@ -69,7 +69,7 @@ export default function About() {
             </p>
           </div>
           <div className="rounded-2xl bg-espresso p-10">
-            <p className="text-xs font-semibold uppercase tracking-[0.15em] text-cream/60">
+            <p className="text-xs font-semibold uppercase tracking-[0.15em] text-mint">
               Vision
             </p>
             <p className="mt-4 font-display text-2xl font-semibold leading-snug text-cream">
