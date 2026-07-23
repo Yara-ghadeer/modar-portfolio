@@ -85,14 +85,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="aspect-[4/5] w-full overflow-hidden rounded-3xl bg-cream-deep">
+        <div className="relative flex aspect-[4/5] w-full items-end justify-center overflow-hidden rounded-3xl bg-copper/10">
           <Image
-            src="/portrait.jpg"
+            src="/portrait-cutout.png"
             alt="Portrait of Modar Ghadeer"
             width={860}
             height={1120}
             priority
-            className="h-full w-full object-cover object-top grayscale"
+            className="w-[94%] object-contain object-bottom grayscale"
           />
         </div>
       </section>
