@@ -95,7 +95,7 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="h-12 w-full rounded-full bg-aqua text-sm font-semibold text-espresso transition-colors hover:bg-aqua-dim"
+              className="h-12 w-full rounded-full bg-copper text-sm font-semibold text-cream transition-colors hover:bg-copper-deep"
             >
               Send message
             </button>

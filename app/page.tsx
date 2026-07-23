@@ -59,7 +59,7 @@ export default function Home() {
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <Link
               href="/contact"
-              className="rounded-full bg-aqua px-7 py-3.5 text-sm font-semibold text-espresso transition-colors hover:bg-aqua-dim"
+              className="rounded-full bg-copper px-7 py-3.5 text-sm font-semibold text-cream transition-colors hover:bg-copper-deep"
             >
               Book a consultation
             </Link>
@@ -183,7 +183,7 @@ export default function Home() {
           </p>
           <Link
             href="/contact"
-            className="mt-9 inline-block rounded-full bg-aqua px-8 py-4 text-sm font-semibold text-espresso transition-colors hover:bg-aqua-dim"
+            className="mt-9 inline-block rounded-full bg-copper px-8 py-4 text-sm font-semibold text-cream transition-colors hover:bg-copper-deep"
           >
             Book a consultation
           </Link>
