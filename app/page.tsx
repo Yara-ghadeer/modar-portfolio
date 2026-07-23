@@ -34,7 +34,7 @@ const featuredWork = [
     title: "Premium Shawarma Concept",
     line: "A street classic reimagined as a premium fast-casual brand.",
     tags: ["Concept", "Branding", "Menu"],
-    image: "/work/shawarma-grill.jpg",
+    image: "/work/shawarma-carving.jpg",
   },
   {
     title: "Modern Café Concept",
