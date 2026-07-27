@@ -63,28 +63,25 @@ export default function About() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="border-t border-espresso/8 bg-cream-deep">
-        <div className="mx-auto max-w-6xl px-6 py-20">
-          <div className="grid overflow-hidden rounded-3xl md:grid-cols-2">
-            <div className="bg-copper/10 p-10 md:p-14">
-              <p className="text-xs font-semibold uppercase tracking-[0.15em] text-copper">
-                Mission
-              </p>
-              <p className="mt-6 font-display text-2xl font-semibold leading-snug text-espresso md:text-3xl">
-                To develop successful, sustainable, and profitable food
-                businesses.
-              </p>
-            </div>
-            <div className="bg-copper p-10 md:p-14">
-              <p className="text-xs font-semibold uppercase tracking-[0.15em] text-mint">
-                Vision
-              </p>
-              <p className="mt-6 font-display text-2xl font-semibold leading-snug text-cream md:text-3xl">
-                To become a trusted F&amp;B business development consultant in
-                Malaysia.
-              </p>
-            </div>
-          </div>
+      <section className="border-t border-espresso/8">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
+            Mission
+          </p>
+          <p className="mt-6 max-w-3xl font-display text-3xl font-semibold leading-snug tracking-tight text-espresso md:text-4xl">
+            To develop successful, sustainable, and profitable food
+            businesses.
+          </p>
+
+          <div className="my-16 h-px w-24 bg-copper" />
+
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
+            Vision
+          </p>
+          <p className="mt-6 max-w-3xl font-display text-3xl font-semibold leading-snug tracking-tight text-espresso md:text-4xl">
+            To become a trusted F&amp;B business development consultant in
+            Malaysia.
+          </p>
         </div>
       </section>
 
