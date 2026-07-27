@@ -245,9 +245,9 @@ export default function Home() {
             F&amp;B consultancy — an overview
           </h2>
           <p className="mx-auto mt-5 max-w-xl leading-relaxed text-ink">
-            Everything on one page — services, process, and how to get in
-            touch. Download the overview and share it with your partners or
-            investors.
+            The full range of services, who I work with, and how to get in
+            touch — in one shareable document. Download the overview and pass
+            it to your partners or investors.
           </p>
           <a
             href="/brochure.pdf"
