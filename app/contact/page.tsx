@@ -30,7 +30,7 @@ export default function Contact() {
       <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
         Contact
       </p>
-      <h1 className="mt-6 max-w-3xl font-display text-5xl font-semibold leading-[1.16] tracking-tight text-espresso md:text-6xl">
+      <h1 className="mt-6 max-w-3xl font-display text-4xl font-semibold leading-[1.16] tracking-tight text-espresso sm:text-5xl md:text-6xl">
         Let&apos;s talk about your business.
       </h1>
 

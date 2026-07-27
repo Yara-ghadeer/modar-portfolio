@@ -59,7 +59,7 @@ export default function Home() {
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
             Modar Ghadeer — F&amp;B Business Development Consultant
           </p>
-          <h1 className="mt-6 font-display text-5xl font-semibold leading-[1.16] tracking-tight text-espresso md:text-6xl lg:text-7xl">
+          <h1 className="mt-6 font-display text-4xl font-semibold leading-[1.16] tracking-tight text-espresso sm:text-5xl md:text-6xl lg:text-7xl">
             Transforming ideas into{" "}
             <em className="not-italic text-copper">successful</em>{" "}
             food businesses.
