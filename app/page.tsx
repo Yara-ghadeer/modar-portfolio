@@ -40,7 +40,7 @@ const featuredWork = [
     title: "Modern Café Concept",
     line: "A contemporary café experience built around quality coffee.",
     tags: ["Concept", "Feasibility", "Design"],
-    image: "/work/cafe-dark.jpg",
+    image: "/work/cafe-warm.jpg",
   },
   {
     title: "Cloud Kitchen Concept",
