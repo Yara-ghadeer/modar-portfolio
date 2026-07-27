@@ -70,12 +70,14 @@ export default function Home() {
             development, operational improvement, and business growth.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
-            <Link
-              href="/contact"
+            <a
+              href="https://wa.me/601128688640?text=Hi%20Modar%2C%20I%27d%20like%20to%20book%20a%20consultation%20about%20my%20F%26B%20business."
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full bg-copper px-7 py-3.5 text-sm font-semibold text-cream transition-colors hover:bg-copper-deep"
             >
               Book a consultation
-            </Link>
+            </a>
             <Link
               href="/services"
               className="rounded-full border border-copper px-7 py-3.5 text-sm font-semibold text-copper transition-colors hover:bg-copper/10"
@@ -268,12 +270,14 @@ export default function Home() {
             Let&apos;s talk about where your food business is today and where
             it should be next year.
           </p>
-          <Link
-            href="/contact"
+          <a
+            href="https://wa.me/601128688640?text=Hi%20Modar%2C%20I%27d%20like%20to%20book%20a%20consultation%20about%20my%20F%26B%20business."
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-9 inline-block rounded-full bg-copper px-8 py-4 text-sm font-semibold text-cream transition-colors hover:bg-copper-deep"
           >
             Book a consultation
-          </Link>
+          </a>
         </div>
       </section>
     </>

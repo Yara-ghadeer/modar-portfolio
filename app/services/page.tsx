@@ -183,12 +183,14 @@ export default function Services() {
             Most projects touch more than one. Tell me where the business
             stands and I&apos;ll tell you where I&apos;d start.
           </p>
-          <Link
-            href="/contact"
+          <a
+            href="https://wa.me/601128688640?text=Hi%20Modar%2C%20I%27d%20like%20to%20book%20a%20consultation%20about%20my%20F%26B%20business."
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-9 inline-block rounded-full bg-copper px-8 py-4 text-sm font-semibold text-cream transition-colors hover:bg-copper-deep"
           >
             Book a consultation
-          </Link>
+          </a>
         </div>
       </section>
     </>

@@ -45,12 +45,14 @@ export default function Nav() {
             );
           })}
           <li>
-            <Link
-              href="/contact"
+            <a
+              href="https://wa.me/601128688640?text=Hi%20Modar%2C%20I%27d%20like%20to%20book%20a%20consultation%20about%20my%20F%26B%20business."
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full bg-copper px-5 py-2.5 text-sm font-semibold text-cream transition-colors hover:bg-copper-deep"
             >
               Book a consultation
-            </Link>
+            </a>
           </li>
         </ul>
 
