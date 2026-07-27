@@ -62,26 +62,66 @@ export default function About() {
         </div>
       </section>
 
-      {/* Mission & Vision */}
-      <section className="border-t border-espresso/8">
+      {/* How I work */}
+      <section className="border-t border-espresso/8 bg-cream-deep">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
-            Mission
+            How I work
           </p>
-          <p className="mt-6 max-w-3xl font-display text-3xl font-semibold leading-snug tracking-tight text-espresso md:text-4xl">
-            To develop successful, sustainable, and profitable food
-            businesses.
-          </p>
+          <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight text-espresso">
+            Three principles behind every project
+          </h2>
+          <div className="mt-12 grid gap-10 md:grid-cols-3">
+            {[
+              {
+                title: "Numbers before opinions",
+                text: "Every recommendation starts with the market and the P&L — not personal taste. If the numbers don't support an idea, I'll show you why.",
+              },
+              {
+                title: "Hands-on, not deck-driven",
+                text: "I work inside the business — kitchens, menus, suppliers, and service — so advice turns into something you can actually operate.",
+              },
+              {
+                title: "Honest advice, always",
+                text: "If a concept won't work, I say so early. A hard conversation at the start is cheaper than a failed opening later.",
+              },
+            ].map(({ title, text }, i) => (
+              <div key={title} className="border-t-2 border-copper pt-6">
+                <p className="font-display text-sm font-semibold text-copper">
+                  {String(i + 1).padStart(2, "0")}
+                </p>
+                <h3 className="mt-3 font-display text-xl font-semibold tracking-tight text-espresso">
+                  {title}
+                </h3>
+                <p className="mt-3 leading-relaxed text-ink">{text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-          <div className="my-16 h-px w-24 bg-copper" />
-
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
-            Vision
-          </p>
-          <p className="mt-6 max-w-3xl font-display text-3xl font-semibold leading-snug tracking-tight text-espresso md:text-4xl">
-            To become a trusted F&amp;B business development consultant in
-            Malaysia.
-          </p>
+      {/* Mission & Vision */}
+      <section className="bg-copper">
+        <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-[1fr_1px_1fr] md:gap-14">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-mint">
+              Mission
+            </p>
+            <p className="mt-6 font-display text-2xl font-semibold leading-snug text-cream md:text-3xl">
+              To develop successful, sustainable, and profitable food
+              businesses.
+            </p>
+          </div>
+          <div className="hidden w-px bg-cream/20 md:block" />
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-mint">
+              Vision
+            </p>
+            <p className="mt-6 font-display text-2xl font-semibold leading-snug text-cream md:text-3xl">
+              To become a trusted F&amp;B business development consultant in
+              Malaysia.
+            </p>
+          </div>
         </div>
       </section>
 
