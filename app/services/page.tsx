@@ -100,7 +100,7 @@ export default function Services() {
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
           Services
         </p>
-        <h1 className="mt-6 max-w-3xl font-display text-5xl font-semibold leading-[1.1] tracking-tight text-espresso md:text-6xl">
+        <h1 className="mt-6 max-w-3xl font-display text-5xl font-semibold leading-[1.16] tracking-tight text-espresso md:text-6xl">
           Five ways I help food businesses grow.
         </h1>
         <p className="mt-8 max-w-xl text-lg leading-relaxed text-ink">

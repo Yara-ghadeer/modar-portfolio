@@ -23,7 +23,7 @@ export default function About() {
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
           About
         </p>
-        <h1 className="mt-6 max-w-3xl font-display text-5xl font-semibold leading-[1.1] tracking-tight text-espresso md:text-6xl">
+        <h1 className="mt-6 max-w-3xl font-display text-5xl font-semibold leading-[1.16] tracking-tight text-espresso md:text-6xl">
           Who I am
         </h1>
 
