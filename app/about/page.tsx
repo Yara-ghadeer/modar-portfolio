@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -27,9 +28,14 @@ export default function About() {
         </h1>
 
         <div className="mt-12 grid gap-12 md:grid-cols-[1fr_1.4fr]">
-          {/* TODO: replace with real portrait photo */}
-          <div className="flex aspect-[4/5] items-center justify-center rounded-2xl bg-cream-deep text-sm text-ink/50">
-            Portrait photo — to be provided
+          <div className="flex aspect-[4/5] items-end justify-center overflow-hidden rounded-2xl bg-copper/10">
+            <Image
+              src="/portrait-cutout.png"
+              alt="Portrait of Modar Ghadeer"
+              width={860}
+              height={1120}
+              className="w-[94%] object-contain object-bottom grayscale"
+            />
           </div>
 
           <div>
@@ -58,24 +64,26 @@ export default function About() {
 
       {/* Mission & Vision */}
       <section className="border-t border-espresso/8 bg-cream-deep">
-        <div className="mx-auto grid max-w-6xl gap-6 px-6 py-20 md:grid-cols-2">
-          <div className="rounded-2xl border border-espresso/8 bg-paper p-10">
-            <p className="text-xs font-semibold uppercase tracking-[0.15em] text-copper">
-              Mission
-            </p>
-            <p className="mt-4 font-display text-2xl font-semibold leading-snug text-espresso">
-              To develop successful, sustainable, and profitable food
-              businesses.
-            </p>
-          </div>
-          <div className="rounded-2xl bg-espresso p-10">
-            <p className="text-xs font-semibold uppercase tracking-[0.15em] text-mint">
-              Vision
-            </p>
-            <p className="mt-4 font-display text-2xl font-semibold leading-snug text-cream">
-              To become a trusted F&amp;B business development consultant in
-              Malaysia.
-            </p>
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <div className="grid overflow-hidden rounded-3xl md:grid-cols-2">
+            <div className="bg-copper/10 p-10 md:p-14">
+              <p className="text-xs font-semibold uppercase tracking-[0.15em] text-copper">
+                Mission
+              </p>
+              <p className="mt-6 font-display text-2xl font-semibold leading-snug text-espresso md:text-3xl">
+                To develop successful, sustainable, and profitable food
+                businesses.
+              </p>
+            </div>
+            <div className="bg-copper p-10 md:p-14">
+              <p className="text-xs font-semibold uppercase tracking-[0.15em] text-mint">
+                Vision
+              </p>
+              <p className="mt-6 font-display text-2xl font-semibold leading-snug text-cream md:text-3xl">
+                To become a trusted F&amp;B business development consultant in
+                Malaysia.
+              </p>
+            </div>
           </div>
         </div>
       </section>
