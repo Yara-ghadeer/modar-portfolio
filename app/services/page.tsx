@@ -70,7 +70,28 @@ const services = [
   },
 ];
 
-const process = ["Discovery", "Analysis", "Planning", "Development", "Growth"];
+const process = [
+  {
+    step: "Discovery",
+    detail: "Understanding your idea, your business, and what success looks like.",
+  },
+  {
+    step: "Analysis",
+    detail: "Market, competitors, and numbers — testing the idea against reality.",
+  },
+  {
+    step: "Planning",
+    detail: "Concept, business plan, and budget — the roadmap to opening.",
+  },
+  {
+    step: "Development",
+    detail: "Hands-on execution, from space and suppliers to opening day.",
+  },
+  {
+    step: "Growth",
+    detail: "Ongoing improvement of menu, operations, and profitability.",
+  },
+];
 
 export default function Services() {
   return (
@@ -117,21 +138,35 @@ export default function Services() {
 
       {/* Process */}
       <section className="border-t border-espresso/8 bg-cream-deep">
-        <div className="mx-auto max-w-6xl px-6 py-20">
-          <h2 className="font-display text-3xl font-semibold tracking-tight text-espresso">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
             My process
+          </p>
+          <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight text-espresso">
+            From first meeting to lasting growth
           </h2>
-          <ol className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-            {process.map((step, i) => (
+          <ol className="relative mt-16 grid gap-10 md:grid-cols-5 md:gap-8">
+            <div
+              aria-hidden="true"
+              className="absolute left-0 top-[6px] hidden h-px w-full bg-copper/25 md:block"
+            />
+            {process.map(({ step, detail }, i) => (
               <li
                 key={step}
-                className="rounded-2xl border border-espresso/8 bg-paper p-6"
+                className="relative border-l border-copper/25 pl-6 md:border-l-0 md:pl-0 md:pt-9"
               >
-                <p className="font-display text-2xl font-semibold text-copper/50">
+                <span
+                  aria-hidden="true"
+                  className="absolute -left-[7px] top-0 h-3.5 w-3.5 rounded-full border-2 border-copper bg-cream-deep md:left-0"
+                />
+                <p className="font-display text-sm font-semibold text-copper">
                   {String(i + 1).padStart(2, "0")}
                 </p>
-                <p className="mt-3 font-display text-lg font-semibold text-espresso">
+                <h3 className="mt-2 font-display text-xl font-semibold tracking-tight text-espresso">
                   {step}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-ink">
+                  {detail}
                 </p>
               </li>
             ))}
