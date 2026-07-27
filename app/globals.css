@@ -7,9 +7,9 @@
   --color-espresso: #121212;
   --color-espresso-soft: #2b2b2b;
   --color-ink: #4d4d4d;
-  --color-copper: #0e7a56;
-  --color-copper-deep: #0a5f43;
-  --color-mint: #6ee7b7;
+  --color-copper: #59652b;
+  --color-copper-deep: #38421f;
+  --color-mint: #c9d68f;
 
   --font-display: var(--font-space);
   --font-sans: var(--font-manrope);
@@ -32,5 +32,5 @@ body {
 }
 
 ::selection {
-  background: rgba(14, 122, 86, 0.15);
+  background: rgba(89, 101, 43, 0.15);
 }
