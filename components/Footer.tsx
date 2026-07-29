@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-espresso text-cream">
       <div className="mx-auto grid max-w-6xl gap-12 px-6 py-16 md:grid-cols-3">
         <div>
-          <p className="font-hand text-3xl font-bold">
+          <p className="font-hand text-2xl font-normal">
             Modar Ghadeer<span className="text-mint">.</span>
           </p>
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-cream/60">

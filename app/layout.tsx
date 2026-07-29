@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
-import { Caveat, Manrope, Plus_Jakarta_Sans } from "next/font/google";
+import {
+  Architects_Daughter,
+  Manrope,
+  Plus_Jakarta_Sans,
+} from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -17,8 +21,9 @@ const manrope = Manrope({
   display: "swap",
 });
 
-const caveat = Caveat({
+const architectsDaughter = Architects_Daughter({
   subsets: ["latin"],
+  weight: "400",
   variable: "--font-caveat",
   display: "swap",
 });
@@ -37,7 +42,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${plusJakarta.variable} ${manrope.variable} ${caveat.variable}`}
+      className={`${plusJakarta.variable} ${manrope.variable} ${architectsDaughter.variable}`}
     >
       <body className="antialiased flex min-h-screen flex-col">
         <Nav />

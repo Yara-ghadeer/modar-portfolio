@@ -20,7 +20,7 @@ export default function Nav() {
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link
           href="/"
-          className="font-hand text-3xl font-bold tracking-tight text-espresso"
+          className="font-hand text-2xl font-normal tracking-tight text-espresso"
         >
           MG<span className="text-copper">.</span>
         </Link>
