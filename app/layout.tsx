@@ -29,6 +29,7 @@ const architectsDaughter = Architects_Daughter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.modarghadeer.com"),
   title: "Modar Ghadeer — F&B Business Development Consultant",
   description:
     "Transforming ideas into successful food businesses — strategic planning, concept development, operational improvement, and business growth.",
