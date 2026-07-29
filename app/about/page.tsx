@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "About — Modar Ghadeer",
@@ -129,12 +128,14 @@ export default function About() {
         <h2 className="font-display text-3xl font-semibold tracking-tight text-espresso">
           Let&apos;s build something that lasts.
         </h2>
-        <Link
-          href="/contact"
+        <a
+          href="https://wa.me/601128688640?text=Hi%20Modar%2C%20I%27d%20like%20to%20book%20a%20consultation%20about%20my%20F%26B%20business."
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-7 inline-block rounded-full bg-copper px-7 py-3.5 text-sm font-semibold text-cream transition-colors hover:bg-copper-deep"
         >
           Get in touch
-        </Link>
+        </a>
       </section>
     </>
   );
