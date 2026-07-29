@@ -27,10 +27,10 @@ const channels = [
 export default function Contact() {
   return (
     <section className="mx-auto max-w-6xl px-6 pb-24 pt-20 md:pt-28">
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
+      <p className="text-center text-sm font-semibold uppercase tracking-[0.2em] text-copper md:text-left">
         Contact
       </p>
-      <h1 className="mt-6 max-w-3xl font-display text-4xl font-semibold leading-[1.16] tracking-tight text-espresso sm:text-5xl md:text-6xl">
+      <h1 className="mx-auto mt-6 max-w-3xl text-center font-display text-4xl font-semibold leading-[1.16] tracking-tight text-espresso sm:text-5xl md:mx-0 md:text-left md:text-6xl">
         Let&apos;s talk about your business.
       </h1>
 

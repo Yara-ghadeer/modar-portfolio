@@ -55,7 +55,7 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="mx-auto grid max-w-6xl items-center gap-12 px-6 pb-24 pt-16 md:grid-cols-[1.15fr_0.85fr] md:pt-24">
-        <div>
+        <div className="text-center md:text-left">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
             Modar Ghadeer — F&amp;B Business Development Consultant
           </p>
@@ -64,12 +64,12 @@ export default function Home() {
             <em className="not-italic text-copper">successful</em>{" "}
             food businesses.
           </h1>
-          <p className="mt-8 max-w-xl text-lg leading-relaxed text-ink">
+          <p className="mx-auto mt-8 max-w-xl text-lg leading-relaxed text-ink md:mx-0">
             I help entrepreneurs and investors build profitable and
             sustainable food businesses through strategic planning, concept
             development, operational improvement, and business growth.
           </p>
-          <div className="mt-10 flex flex-wrap items-center gap-4">
+          <div className="mt-10 flex flex-wrap items-center justify-center gap-4 md:justify-start">
             <a
               href="https://wa.me/601128688640?text=Hi%20Modar%2C%20I%27d%20like%20to%20book%20a%20consultation%20about%20my%20F%26B%20business."
               target="_blank"
@@ -102,8 +102,8 @@ export default function Home() {
       {/* Services preview */}
       <section className="border-t border-espresso/8 bg-cream-deep">
         <div className="mx-auto max-w-6xl px-6 py-24">
-          <div className="flex flex-wrap items-end justify-between gap-6">
-            <div>
+          <div className="flex flex-wrap items-end justify-center gap-6 md:justify-between">
+            <div className="text-center md:text-left">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
                 What I do
               </p>
@@ -195,13 +195,13 @@ export default function Home() {
       {/* Featured work */}
       <section className="border-t border-espresso/8 bg-paper">
         <div className="mx-auto max-w-6xl px-6 py-24">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
+          <p className="text-center text-sm font-semibold uppercase tracking-[0.2em] text-copper md:text-left">
             Featured work
           </p>
-          <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight text-espresso">
+          <h2 className="mt-4 text-center font-display text-4xl font-semibold tracking-tight text-espresso md:text-left">
             Concepts brought to life
           </h2>
-          <p className="mt-4 max-w-xl leading-relaxed text-ink">
+          <p className="mx-auto mt-4 max-w-xl text-center leading-relaxed text-ink md:mx-0 md:text-left">
             A selection of concepts I&apos;ve helped shape — from first
             sketch to opening day.
           </p>

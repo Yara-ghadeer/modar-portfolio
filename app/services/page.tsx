@@ -96,14 +96,14 @@ const process = [
 export default function Services() {
   return (
     <>
-      <section className="mx-auto max-w-6xl px-6 pb-16 pt-20 md:pt-28">
+      <section className="mx-auto max-w-6xl px-6 pb-16 pt-20 text-center md:pt-28 md:text-left">
         <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
           Services
         </p>
-        <h1 className="mt-6 max-w-3xl font-display text-4xl font-semibold leading-[1.16] tracking-tight text-espresso sm:text-5xl md:text-6xl">
+        <h1 className="mx-auto mt-6 max-w-3xl font-display text-4xl font-semibold leading-[1.16] tracking-tight text-espresso sm:text-5xl md:mx-0 md:text-6xl">
           Five ways I help food businesses grow.
         </h1>
-        <p className="mt-8 max-w-xl text-lg leading-relaxed text-ink">
+        <p className="mx-auto mt-8 max-w-xl text-lg leading-relaxed text-ink md:mx-0">
           Every engagement starts with the numbers and ends with something you
           can operate. No decks that sit in a drawer.
         </p>
@@ -139,10 +139,10 @@ export default function Services() {
       {/* Process */}
       <section className="border-t border-espresso/8 bg-cream-deep">
         <div className="mx-auto max-w-6xl px-6 py-24">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
+          <p className="text-center text-sm font-semibold uppercase tracking-[0.2em] text-copper md:text-left">
             My process
           </p>
-          <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight text-espresso">
+          <h2 className="mt-4 text-center font-display text-4xl font-semibold tracking-tight text-espresso md:text-left">
             From first meeting to lasting growth
           </h2>
           <ol className="relative mt-16 grid gap-10 md:grid-cols-5 md:gap-8">

@@ -19,10 +19,10 @@ export default function About() {
   return (
     <>
       <section className="mx-auto max-w-6xl px-6 pb-20 pt-20 md:pt-28">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
+        <p className="text-center text-sm font-semibold uppercase tracking-[0.2em] text-copper md:text-left">
           About
         </p>
-        <h1 className="mt-6 max-w-3xl font-display text-4xl font-semibold leading-[1.16] tracking-tight text-espresso sm:text-5xl md:text-6xl">
+        <h1 className="mt-6 max-w-3xl text-center font-display text-4xl font-semibold leading-[1.16] tracking-tight text-espresso sm:text-5xl md:text-left md:text-6xl">
           Who I am
         </h1>
 
@@ -64,10 +64,10 @@ export default function About() {
       {/* How I work */}
       <section className="border-t border-espresso/8 bg-cream-deep">
         <div className="mx-auto max-w-6xl px-6 py-24">
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
+          <p className="text-center text-sm font-semibold uppercase tracking-[0.2em] text-copper md:text-left">
             How I work
           </p>
-          <h2 className="mt-4 font-display text-4xl font-semibold tracking-tight text-espresso">
+          <h2 className="mt-4 text-center font-display text-4xl font-semibold tracking-tight text-espresso md:text-left">
             Three principles behind every project
           </h2>
           <div className="mt-12 grid gap-10 md:grid-cols-3">
@@ -102,7 +102,7 @@ export default function About() {
       {/* Mission & Vision */}
       <section className="bg-copper">
         <div className="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-[1fr_1px_1fr] md:gap-14">
-          <div>
+          <div className="text-center md:text-left">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-mint">
               Mission
             </p>
@@ -112,7 +112,7 @@ export default function About() {
             </p>
           </div>
           <div className="hidden w-px bg-cream/20 md:block" />
-          <div>
+          <div className="text-center md:text-left">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-mint">
               Vision
             </p>

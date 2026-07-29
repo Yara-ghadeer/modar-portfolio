@@ -66,13 +66,13 @@ export default function Nav() {
         >
           <span className="relative block h-3.5 w-5">
             <span
-              className={`absolute left-0 top-0 h-0.5 w-full bg-espresso transition-transform ${
-                open ? "top-1.5 rotate-45" : ""
+              className={`absolute left-0 h-0.5 w-full bg-espresso transition-all duration-200 ${
+                open ? "top-1.5 rotate-45" : "top-0 rotate-0"
               }`}
             />
             <span
-              className={`absolute left-0 top-3 h-0.5 w-full bg-espresso transition-transform ${
-                open ? "top-1.5 -rotate-45" : ""
+              className={`absolute left-0 h-0.5 w-full bg-espresso transition-all duration-200 ${
+                open ? "top-1.5 -rotate-45" : "top-3 rotate-0"
               }`}
             />
           </span>
