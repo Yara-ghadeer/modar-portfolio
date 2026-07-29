@@ -13,6 +13,7 @@
 
   --font-display: var(--font-space);
   --font-sans: var(--font-manrope);
+  --font-hand: var(--font-caveat);
 }
 
 :root {
