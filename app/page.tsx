@@ -54,7 +54,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="mx-auto grid max-w-6xl items-center gap-12 px-6 pb-24 pt-16 md:grid-cols-[1.15fr_0.85fr] md:pt-24">
+      <section className="mx-auto grid max-w-6xl items-center gap-12 px-6 pb-24 pt-16 md:grid-cols-[1.2fr_0.8fr] md:pt-24">
         <div className="text-center md:text-left">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-copper">
             Modar Ghadeer — F&amp;B Business Development Consultant
@@ -87,14 +87,15 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl">
+        {/* Full uncropped portrait */}
+        <div className="relative mx-auto aspect-[2/3] w-full max-w-sm overflow-hidden rounded-3xl md:max-w-none">
           <Image
             src="/portrait-hero.jpg"
             alt="Portrait of Modar Ghadeer"
             width={1066}
             height={1600}
             priority
-            className="h-full w-full object-cover object-top"
+            className="h-full w-full object-cover"
           />
           <div
             aria-hidden="true"
