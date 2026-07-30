@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -18,11 +19,16 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-espresso/8 bg-cream/85 backdrop-blur-md">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <Link
-          href="/"
-          className="font-hand text-2xl font-normal tracking-tight text-espresso"
-        >
-          MG<span className="text-copper">.</span>
+        <Link href="/" className="flex items-center" aria-label="MG — home">
+          <Image
+            src="/logo-mg-dark.png"
+            alt="MG."
+            width={1067}
+            height={763}
+            priority
+            unoptimized
+            className="h-8 w-auto"
+          />
         </Link>
 
         {/* Desktop links */}
