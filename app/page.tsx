@@ -87,15 +87,19 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Portrait — upper section, background removed */}
-        <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl bg-copper/10 md:max-w-none">
+        {/* Portrait — upper section */}
+        <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl md:max-w-none">
           <Image
-            src="/portrait-hero-cutout.png"
+            src="/portrait-hero.jpg"
             alt="Portrait of Modar Ghadeer"
             width={1066}
             height={1600}
             priority
-            className="h-full w-full origin-top scale-[1.35] object-cover object-top"
+            className="h-full w-full origin-top scale-[1.6] object-cover object-top"
+          />
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 bg-copper/15"
           />
         </div>
       </section>
