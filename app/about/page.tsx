@@ -33,7 +33,7 @@ export default function About() {
               alt="Portrait of Modar Ghadeer"
               width={1066}
               height={1600}
-              className="h-full w-full object-cover object-top"
+              className="h-full w-full origin-top scale-[1.6] object-cover object-top"
             />
             <div
               aria-hidden="true"
