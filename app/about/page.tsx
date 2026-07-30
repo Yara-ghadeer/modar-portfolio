@@ -29,11 +29,11 @@ export default function About() {
         <div className="mt-12 grid gap-12 md:grid-cols-[1fr_1.4fr]">
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
             <Image
-              src="/portrait-about.jpg"
+              src="/portrait-hero.jpg"
               alt="Portrait of Modar Ghadeer"
-              width={1600}
-              height={1066}
-              className="h-full w-full object-cover"
+              width={1066}
+              height={1600}
+              className="h-full w-full object-cover object-top"
             />
             <div
               aria-hidden="true"
