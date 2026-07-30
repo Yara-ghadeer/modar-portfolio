@@ -90,12 +90,12 @@ export default function Home() {
         {/* Portrait — upper section */}
         <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl md:max-w-none">
           <Image
-            src="/portrait-hero.jpg"
+            src="/portrait-about.jpg"
             alt="Portrait of Modar Ghadeer"
-            width={1066}
-            height={1600}
+            width={1600}
+            height={1066}
             priority
-            className="h-full w-full origin-top scale-[1.6] object-cover object-top"
+            className="h-full w-full object-cover"
           />
           <div
             aria-hidden="true"
