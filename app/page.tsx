@@ -87,15 +87,15 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Full uncropped portrait */}
-        <div className="relative mx-auto aspect-[2/3] w-full max-w-sm overflow-hidden rounded-3xl md:max-w-none">
+        {/* Portrait — upper section */}
+        <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl md:max-w-none">
           <Image
             src="/portrait-hero.jpg"
             alt="Portrait of Modar Ghadeer"
             width={1066}
             height={1600}
             priority
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-top"
           />
           <div
             aria-hidden="true"
