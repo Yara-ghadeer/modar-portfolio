@@ -95,7 +95,7 @@ export default function Home() {
             width={1066}
             height={1600}
             priority
-            className="h-full w-full object-cover object-top"
+            className="h-full w-full origin-top scale-[1.35] object-cover object-top"
           />
           <div
             aria-hidden="true"
