@@ -87,14 +87,18 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative flex aspect-[4/5] w-full items-end justify-center overflow-hidden rounded-3xl bg-copper/10">
+        <div className="relative aspect-[4/5] w-full overflow-hidden rounded-3xl">
           <Image
-            src="/portrait-cutout.png"
+            src="/portrait-hero.jpg"
             alt="Portrait of Modar Ghadeer"
-            width={860}
-            height={1120}
+            width={1066}
+            height={1600}
             priority
-            className="w-[94%] object-contain object-bottom grayscale"
+            className="h-full w-full object-cover object-top"
+          />
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 bg-copper/15"
           />
         </div>
       </section>

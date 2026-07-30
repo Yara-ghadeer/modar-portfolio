@@ -27,13 +27,17 @@ export default function About() {
         </h1>
 
         <div className="mt-12 grid gap-12 md:grid-cols-[1fr_1.4fr]">
-          <div className="flex aspect-[4/5] items-end justify-center overflow-hidden rounded-2xl bg-copper/10">
+          <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
             <Image
-              src="/portrait-cutout.png"
+              src="/portrait-about.jpg"
               alt="Portrait of Modar Ghadeer"
-              width={860}
-              height={1120}
-              className="w-[94%] object-contain object-bottom grayscale"
+              width={1600}
+              height={1066}
+              className="h-full w-full object-cover"
+            />
+            <div
+              aria-hidden="true"
+              className="absolute inset-0 bg-copper/15"
             />
           </div>
 
